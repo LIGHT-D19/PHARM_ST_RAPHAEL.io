@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+:root {
+    --blue-color: rgb(5, 63, 100);
+    --green-color: rgb(129, 206, 13);
+    --white-color: white;
+}
+
+nav {
+    /* position: relative; */
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: var(--green-color);
+    font-size: larger;
+}
+
+nav .nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav .nav a {
+    text-decoration: none;
+    color: var(--blue-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .reseaux {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav .reseaux a {
+    color: var(--blue-color);
+    font-size: 27px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav .reseaux a :hover {
+    color: var(--green-color);
+    transition: .4s;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.reseaux .input-wrapper .icon {
+    font-size: 27px;
+    color: var(--blue-color);
+}
+
+.input {
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    font-size: 17px;
+    padding-right: 40px;
+    margin-left: 20px;
+    color: var(--blue-color);
+}
+
+.input::placeholder,
+.input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.input::placeholder {
+    color: var(--blue-color);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: large;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+}
+
+.icon:focus~.input,
+.input:focus {
+    box-shadow: none;
+    width: 100px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid var(--blue-color);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.header {
+    background: linear-gradient(to right ,rgba(5, 64, 100, 0.63), rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.336)), url(./img/african-american-pharmacist-working-drugstore-hospital-pharmacy-african-healthcare.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+ .banner span {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.histoire {
+    margin: 50px 50px 50px ;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.histoire img {
+    border-radius: 20px;
+}
+.histoire .ecrit {
+    font-size: 20px;
+}
+.histoire .ecrit h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--blue-color);
+}
+.histoire .ecrit p {
+    color: rgb(100, 96, 90);
+}
+.histoire .ecrit button{
+    border: none;
+    background-color: var(--blue-color);
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+.histoire .ecrit button a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 20px;
+}
