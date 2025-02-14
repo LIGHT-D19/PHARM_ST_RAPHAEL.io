@@ -127,9 +127,6 @@ nav .reseaux a :hover {
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
-.header {
-}
-
 .banner {
   margin-left: 0px;
   margin-top: 0px;
@@ -211,6 +208,21 @@ nav .reseaux a :hover {
   border-bottom-left-radius: 30px;
 }
 .produits .boite .card a.btn {
+  color: var(--white-color) !important;
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 25px !important;
+}
+.produits .boite1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 50px;
+}
+.produits .boite1 .card {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.produits .boite1 .card a.btn {
   color: var(--white-color) !important;
   background-color: var(--blue-color);
   border: none;
