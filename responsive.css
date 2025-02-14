@@ -22,7 +22,7 @@
             rgba(0, 0, 0, 0.336)
           ),
           url(./img/african-american-pharmacist-working-drugstore-hospital-pharmacy-african-healthcare.jpg);
-        height: 40vh;
+        height: 35vh;
         background-position: center;
         background-size: cover;
         padding-top: 75px;
@@ -36,13 +36,13 @@
       }
       .banner p {
         color: var(--white-color);
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
       }
       .banner h2 {
         color: var(--green-color);
-        font-size: smaller;
+        font-size:x-large;
       }
 
       .histoire {
@@ -60,7 +60,7 @@
         margin-top: 10px;
       }
       .histoire .ecrit {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 5px;
       }
       .histoire .ecrit button {
@@ -74,7 +74,7 @@
         color: var(--white-color);
         text-decoration: none;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 15px;
       }
 
       .produits h1 {
@@ -96,12 +96,15 @@
         display: none;
       }
       .produits .boite .card {
-        width: 15rem !important;
+        width: 13rem !important;
         height: 20rem !important;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
       }
       
+      .produits .boite .card img{
+        width: 207px;
+      }
       .card-body .card-title {
         font-size: 15px;
       }
