@@ -231,7 +231,7 @@ nav .reseaux a :hover {
 .Nous {
   background: linear-gradient(
     to bottom,
-    rgb(230, 230, 230),
+    rgb(255, 249, 249),
     rgb(230, 230, 230),
     rgba(0, 0, 0, 0.226)
   );

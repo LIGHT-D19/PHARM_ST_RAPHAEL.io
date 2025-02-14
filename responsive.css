@@ -96,14 +96,14 @@
         display: none;
       }
       .produits .boite .card {
-        width: 13rem !important;
-        height: 20rem !important;
+        width: 17rem !important;
+        height: 21rem !important;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
       }
       
       .produits .boite .card img{
-        width: 207px;
+        width: 270px;
       }
       .card-body .card-title {
         font-size: 15px;
