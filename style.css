@@ -1,177 +1,268 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
 }
 
 :root {
-    --blue-color: rgb(5, 63, 100);
-    --green-color: rgb(129, 206, 13);
-    --white-color: white;
+  --blue-color: rgb(5, 63, 100);
+  --green-color: rgb(129, 206, 13);
+  --white-color: white;
 }
 
 nav {
-    /* position: relative; */
-    background-color: var(--white-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  /* position: relative; */
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 nav .logo a {
-    text-decoration: none;
-    color: var(--green-color);
-    font-size: larger;
+  text-decoration: none;
+  color: var(--green-color);
+  font-size: larger;
 }
 
 nav .nav {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 nav .nav a {
-    text-decoration: none;
-    color: var(--blue-color);
-    font-size: 20px;
-    font-weight: 500;
+  text-decoration: none;
+  color: var(--blue-color);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 nav .reseaux {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 nav .reseaux a {
-    color: var(--blue-color);
-    font-size: 27px;
-    text-decoration: none;
-    transition: .4s;
+  color: var(--blue-color);
+  font-size: 27px;
+  text-decoration: none;
+  transition: 0.4s;
 }
 
 nav .reseaux a :hover {
-    color: var(--green-color);
-    transition: .4s;
+  color: var(--green-color);
+  transition: 0.4s;
 }
 
 .input-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
 }
 
 .reseaux .input-wrapper .icon {
-    font-size: 27px;
-    color: var(--blue-color);
+  font-size: 27px;
+  color: var(--blue-color);
 }
 
 .input {
-    border-style: none;
-    height: 50px;
-    width: 50px;
-    padding: 10px;
-    outline: none;
-    border-radius: 50%;
-    transition: .5s ease-in-out;
-    font-size: 17px;
-    padding-right: 40px;
-    margin-left: 20px;
-    color: var(--blue-color);
+  border-style: none;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  outline: none;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  font-size: 17px;
+  padding-right: 40px;
+  margin-left: 20px;
+  color: var(--blue-color);
 }
 
 .input::placeholder,
 .input {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 17px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
 }
 
 .input::placeholder {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    font-size: large;
-    right: 0px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    outline: none;
-    border-style: none;
-    border-radius: 50%;
-    pointer-events: painted;
-    background-color: transparent;
-    transition: .2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: large;
+  right: 0px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border-style: none;
+  border-radius: 50%;
+  pointer-events: painted;
+  background-color: transparent;
+  transition: 0.2s linear;
 }
 
-.icon:focus~.input,
+.icon:focus ~ .input,
 .input:focus {
-    box-shadow: none;
-    width: 100px;
-    border-radius: 0px;
-    background-color: transparent;
-    border-bottom: 3px solid var(--blue-color);
-    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  box-shadow: none;
+  width: 100px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 3px solid var(--blue-color);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
 .header {
-    background: linear-gradient(to right ,rgba(5, 64, 100, 0.63), rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.336)), url(./img/african-american-pharmacist-working-drugstore-hospital-pharmacy-african-healthcare.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
 }
 
 .banner {
-    margin-left: 50px;
-    margin-top: 100px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.banner .carousel-inner .carousel-item {
+  background: linear-gradient(
+      to right,
+      rgba(5, 64, 100, 0.63),
+      rgba(0, 0, 0, 0.219),
+      rgba(0, 0, 0, 0.336)
+    ),
+    url(./img/african-american-pharmacist-working-drugstore-hospital-pharmacy-african-healthcare.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-left: 50px;
 }
 
- .banner span {
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
+.banner span {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
 }
-
+.banner p {
+  color: var(--white-color);
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.banner h2 {
+  color: var(--green-color);
+}
 .histoire {
-    margin: 50px 50px 50px ;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  margin: 50px 50px 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 .histoire img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 .histoire .ecrit {
-    font-size: 20px;
+  font-size: 20px;
 }
 .histoire .ecrit h1 {
-    font-size: 45px;
-    font-weight: bold;
-    color: var(--blue-color);
+  font-size: 45px;
+  text-transform: uppercase;
+  color: var(--green-color);
 }
 .histoire .ecrit p {
-    color: rgb(100, 96, 90);
+  color: rgb(100, 96, 90);
 }
-.histoire .ecrit button{
-    border: none;
-    background-color: var(--blue-color);
-    border-radius: 25px;
-    padding: 5px 15px;
+.histoire .ecrit button {
+  border: none;
+  background-color: var(--blue-color);
+  border-radius: 25px;
+  padding: 5px 15px;
 }
-.histoire .ecrit button a{
-    color: var(--white-color);
-    text-decoration: none;
-    font-size: 20px;
+.histoire .ecrit button a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.produits h1 {
+  margin-left: 50px;
+  color: var(--green-color);
+  text-transform: uppercase;
+}
+.produits .boite {
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 50px;
+}
+.produits .boite .card {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.produits .boite .card a.btn {
+  color: var(--white-color) !important;
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 25px !important;
+}
+.Nous {
+  background: linear-gradient(
+    to bottom,
+    rgb(230, 230, 230),
+    rgb(230, 230, 230),
+    rgba(0, 0, 0, 0.226)
+  );
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  padding-top: 50px;
+  padding-left: 50px;
+  margin-top: 80px;
+  /* margin-bottom: 100px; */
+}
+.Nous h1 {
+  color: var(--green-color);
+}
+
+.partenariat h1 {
+  color: var(--green-color);
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.contact h1 {
+  color: var(--blue-color);
+}
+.contact p {
+  color: var(--white-color);
+}
+
+.contact form {
+  width: 50%;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.808);
+  /* height: 50vh; */
+  /* background-color: rgb(242, 146, 0); */
+  padding-top: 20px;
+  color: var(--white-color);
+  height: 10vh;
+  text-align: center;
 }
