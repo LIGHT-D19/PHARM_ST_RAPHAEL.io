@@ -231,9 +231,9 @@ nav .reseaux a :hover {
 .Nous {
   background: linear-gradient(
     to bottom,
-    rgb(255, 249, 249),
-    rgb(230, 230, 230),
-    rgba(0, 0, 0, 0.226)
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
   );
   background-position: center;
   background-size: cover;
@@ -252,6 +252,12 @@ nav .reseaux a :hover {
   text-transform: uppercase;
 }
 
+.partenariat .img img {
+  width: 120px;
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
 .contact {
   display: flex;
   gap: 50px;
@@ -261,14 +267,18 @@ nav .reseaux a :hover {
 .contact h1 {
   color: var(--blue-color);
 }
+
 .contact p {
-  color: var(--white-color);
+  color: rgba(0, 0, 0, 0.623);
 }
 
 .contact form {
   width: 50%;
 }
-
+.Nous form .form-floating {
+  /* width: 100%; */
+  margin-bottom: 10px;
+}
 footer {
   background-color: rgba(0, 0, 0, 0.808);
   /* height: 50vh; */

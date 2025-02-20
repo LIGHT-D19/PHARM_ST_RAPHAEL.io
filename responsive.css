@@ -56,6 +56,7 @@
         display: none;
       }
       .histoire .ecrit h1 {
+        text-align: center;
         font-size: 25px;
         margin-top: 10px;
       }
@@ -78,6 +79,7 @@
       }
 
       .produits h1 {
+        text-align: center;
         margin-left: 05px;
         margin-bottom: -25px;
         color: var(--green-color);
@@ -114,5 +116,58 @@
       .card-body .btn {
         font-size: 12px;
       }
-      
+
+      .partenariat .img img {
+        width: 100px;
+        margin-right: 60px;
+        margin-bottom: 30px;
+      }
+
+      .Nous {
+        background: linear-gradient(
+          to bottom,
+          rgb(255, 255, 255),
+          rgb(255, 255, 255),
+          rgb(255, 255, 255)
+        );
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+        /* margin-bottom: 100px; */
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        /* justify-content: center; */
+      }
+      .Nous h1 {
+        color: var(--green-color);
+        text-align: center;
+      }
+      .contact h1 {
+        color: var(--blue-color);
+      }
+      .contact p {
+        color: rgba(0, 0, 0, 0.623);
+      }
+      .Nous form {
+        width: 100%;
+      }
+      .Nous form .form-floating {
+        /* width: 100%; */
+        margin-bottom: 10px;
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.808);
+        /* height: 50vh; */
+        /* background-color: rgb(242, 146, 0); */
+        padding-top: 10px;
+        color: var(--white-color);
+        height: 10vh;
+        text-align: center;
+      }
 }
